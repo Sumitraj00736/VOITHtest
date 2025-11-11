@@ -3,7 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
 import { Outlet } from 'react-router-dom'
-import Header from './components/layout/header.jsx'
+import Header from './components/layout/Header.jsx'
 import Footer from './components/layout/Footer.jsx'
 
 function App() {
