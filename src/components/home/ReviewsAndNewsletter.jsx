@@ -1,7 +1,6 @@
 import { Star, Quote, Mail } from "lucide-react";
 import whattheysay from "../../assets/whattheysay.png";
 import { useState, useRef, useEffect } from "react";
-import "../../app.css";
 
 export default function ReviewsAndNewsletter() {
   const [currentSlide, setCurrentSlide] = useState(0);
