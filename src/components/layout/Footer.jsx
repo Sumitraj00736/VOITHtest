@@ -4,20 +4,20 @@ import facebook from "../../assets/facebook.png";
 import twitter from "../../assets/twitter.png";
 import instagram from "../../assets/instagram.png";
 
-import {
-  faTwitter,
-  faLinkedin,
-  faFacebook,
-} from "@fortawesome/free-brands-svg-icons";
+// import {
+//   faTwitter,
+//   faLinkedin,
+//   faFacebook,
+// } from "@fortawesome/free-brands-svg-icons";
 
-import footerBg from "../../assets/footerimage.png";
+// import footerBg from "../../assets/footerimage.png";
 
 const Footer = () => {
   return (
     <footer className="relative bg-[#1f1f1f] border-t border-gray-800 py-8 sm:py-12 overflow-hidden">
-      <div
-        aria-hidden="true"
-        className="hidden sm:block pointer-events-none absolute inset-y-0 right-0 z-0"
+      {/* <div
+        // aria-hidden="true"
+        className="pointer-events-none absolute inset-y-0 right-0 z-0"
         style={{
           width: "40%",
           backgroundImage: `url(${footerBg})`,
@@ -26,7 +26,7 @@ const Footer = () => {
           backgroundSize: "contain",
           opacity: 0.12,
         }}
-      />
+      /> */}
 
 
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
