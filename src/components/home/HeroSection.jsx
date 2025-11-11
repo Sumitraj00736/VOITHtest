@@ -5,11 +5,11 @@ import bannerImage from "../../assets/heroimg.png";
 const HeroSection = () => {
   return (
     <div className="px-4 md:px-8 lg:px-16 py-8">
-      <div className="relative w-full h-[80vh] bg-black text-white overflow-hidden rounded-2xl">
+      <div className="relative w-full h-[65vh] md:h-[80vh] bg-black text-white overflow-hidden rounded-2xl">
         <img
           src={bannerImage}
           alt="Car"
-          className="absolute inset-0 w-full h-full object-cover opacity-40"
+          className="absolute inset-0 w-full h-full  object-cover opacity-40"
         />
 
 
