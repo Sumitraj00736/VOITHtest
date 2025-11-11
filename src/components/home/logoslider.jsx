@@ -93,7 +93,7 @@ const LogoSlider = () => {
               <img
                 src={logoSrc}
                 alt={`brand-${i}`}
-                className="h-20 w-auto grayscale opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-125"
+                className="h-10 md:h-20 w-auto grayscale opacity-70 hover:opacity-100 transition-all duration-300 hover:scale-125"
               />
             </div>
           ))}
