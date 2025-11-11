@@ -14,8 +14,8 @@ const HeroSection = () => {
         />
 
         {/* Overlay Content - Centered */}
-        <div className="absolute inset-0 flex flex-col items-center justify-center text-center px-4 sm:px-8 md:px-16 z-10">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4 leading-snug">
+        <div className="absolute inset-0 flex flex-col  justify-center text-cnter px-4 sm:px-8 md:px-16 z-10">
+          <h1 className="text-2xl sm:text-4xl md:text-5xl font-bold mb-4 leading-snug">
             EASY WAY TO RENT VEHICLES
           </h1>
 
@@ -24,7 +24,7 @@ const HeroSection = () => {
           </p>
 
           {/* Stats */}
-          <div className="flex flex-col sm:flex-row items-center justify-center gap-6 sm:gap-12 mb-10">
+          <div className="flex flex-col sm:flex-row items-center  gap-6 sm:gap-12 mb-10">
             <div className="text-center">
               <h2 className="text-4xl md:text-6xl font-bold text-[#EA3C3C]">
                 50+
