@@ -13,17 +13,17 @@ const HeroSection = () => {
         />
 
 
-        <div className="relative z-10 flex flex-col items-center justify-center h-full text-left px-6 md:px-12">
+        <div className="relative z-10 md:ml-26 flex flex-col justify-center h-full text-left px-6 md:px-12">
           <h1 className="text-2xl  md:text-5xl font-semibold md:font-bold mb-4 md:mr-4">
             EASY WAY TO RENT VEHICLES 
           </h1>
 
-             <p className="text-gray-200 font-medium md:font-semibold flex items-center md:ml-70 justify-start gap-10 mb-10 w-full">
+             <p className="text-gray-200 font-medium md:font-semibold flex   gap-10 mb-10 w-full">
             Be the first person to take the full enjoyment from our service
           </p>
 
          
-          <div className="flex items-center md:ml-70 justify-start gap-10 mb-10 w-full">
+          <div className="flex gap-10 mb-10 w-full">
             <div className="text-left">
               <h2 className="text-3xl md:text-6xl font-bold text-[#EA3C3C]">50+</h2>
               <p className="text-sm text-white">Vehicle brands</p>
