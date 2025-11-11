@@ -1,5 +1,5 @@
 import { Star, Quote, Mail } from "lucide-react";
-import whattheysay from "../../assets/whattheysay.png";
+import pp from "../../assets/pp.png";
 import { useState, useRef, useEffect } from "react";
 
 export default function ReviewsAndNewsletter() {
@@ -28,8 +28,7 @@ export default function ReviewsAndNewsletter() {
       id: 1,
       name: "Meliash Subedi",
       location: "Pokhara",
-      image:
-        {whattheysay},
+      image:{pp},
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nam suscipit amet nec eget fermentum, elementum purus aliquet. Porttitor elementum a felis, tempus erat orci.",
       rating: 5,
     },
@@ -37,8 +36,7 @@ export default function ReviewsAndNewsletter() {
       id: 2,
       name: "Ram Subedi",
       location: "kathmandu",
-      image:
-       {whattheysay},
+      image:{pp},
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nam suscipit amet nec eget fermentum, elementum purus aliquet. Porttitor elementum a felis, tempus erat orci.",
       rating: 5,
     },
@@ -46,8 +44,7 @@ export default function ReviewsAndNewsletter() {
       id: 3,
       name: "Sujita Sharma",
       location: "Lalitpur",
-      image:
-        {whattheysay},
+      image:{pp},
       text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque nam suscipit amet nec eget fermentum, elementum purus aliquet. Porttitor elementum a felis, tempus erat orci.",
       rating: 5,
     },
@@ -84,7 +81,7 @@ export default function ReviewsAndNewsletter() {
 
               <div className="flex items-center gap-3">
                 <img
-                  src={review.image}
+                  src={pp}
                   alt={review.name}
                   className="w-10 h-10 rounded-full object-cover"
                 />
@@ -121,7 +118,7 @@ export default function ReviewsAndNewsletter() {
 
                     <div className="flex items-center gap-3">
                       <img
-                        src={review.image}
+                        src={pp}
                         alt={review.name}
                         className="w-10 h-10 rounded-full object-cover"
                       />
