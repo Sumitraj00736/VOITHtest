@@ -27,7 +27,7 @@ export default function ShareVehicleSection() {
     <section className="relative min-h-[400px] md:h-screen bg-white overflow-hidden my-10">
 
       <div
-        className="absolute inset-0 md:left-1/2 bg-no-repeat bg-[#F8FAFC] bg-center h-full w-full md:w-1/2 right-10"
+        className="absolute inset-0 md:left-1/2 bg-no-repeat  bg-center h-full w-full md:w-1/2 right-10"
         style={bgStyle}
       >
         {/* <div className="absolute inset-0"></div> */}
