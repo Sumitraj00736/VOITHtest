@@ -1,6 +1,6 @@
 import React from "react";
 import { Calendar, MapPin } from "lucide-react";
-import bannerImage from "../../assets/banner.jpg";
+import bannerImage from "../../assets/heroimg.png";
 
 const HeroSection = () => {
   return (
@@ -9,46 +9,46 @@ const HeroSection = () => {
         <img
           src={bannerImage}
           alt="Car"
-          className="absolute inset-0 w-full h-full object-cover opacity-70"
+          className="absolute inset-0 w-full h-full object-cover opacity-40"
         />
 
-        {/* Content - aligned from start (left) */}
+
         <div className="relative z-10 flex flex-col items-center justify-center h-full text-left px-6 md:px-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4 md:mr-4">
-            EASY WAY TO RENT VEHICLES
+          <h1 className="text-2xl  md:text-5xl font-semibold md:font-bold mb-4 md:mr-4">
+            EASY WAY TO RENT VEHICLES 
           </h1>
 
-             <p className="text-gray-200  flex items-center md:ml-70 justify-start gap-10 mb-10 w-full">
-            Jorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc.
+             <p className="text-gray-200 font-medium md:font-semibold flex items-center md:ml-70 justify-start gap-10 mb-10 w-full">
+            Be the first person to take the full enjoyment from our service
           </p>
 
          
           <div className="flex items-center md:ml-70 justify-start gap-10 mb-10 w-full">
             <div className="text-left">
-              <h2 className="text-4xl font-bold text-[#EA3C3C]">50+</h2>
-              <p className="text-sm text-gray-300">Vehicle brands</p>
+              <h2 className="text-3xl md:text-6xl font-bold text-[#EA3C3C]">50+</h2>
+              <p className="text-sm text-white">Vehicle brands</p>
             </div>
 
-            <div className="hidden md:block w-px h-14 bg-white/40" />
+            <div className="w-px h-14 md:h-20 bg-[#737373]" />
 
             <div className="text-left">
-              <h2 className="text-4xl font-bold text-[#EA3C3C]">10K+</h2>
-              <p className="text-sm text-gray-300">Clients</p>
+              <h2 className="text-3xl md:text-6xl font-bold text-[#EA3C3C]">10K+</h2>
+              <p className="text-sm text-white">Clients</p>
             </div>
           </div>
 
-          <div className="flex bg-white opacity-90 text-black rounded-full shadow-lg overflow-hidden w-full max-w-3xl">
-            <div className="flex items-center gap-2 px-4 py-3 border-r w-1/3">
-              <Calendar size={18} className="text-gray-500" />
+          <div className="flex bg-white opacity-60 text-black rounded-full shadow-lg overflow-hidden w-full max-w-3xl">
+            <div className="flex items-center gap-2 px-4 py-3 border-r w-1/3 hover:scale-105 transition-all duration-300">
+              <Calendar size={18} className="text-[#737373]" />
               <input
                 type="text"
                 placeholder="Start Date & Time"
-                className="w-full outline-none text-sm bg-transparent"
+                className="w-full outline-none text-sm bg-transparent  "
               />
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-3 border-r w-1/3">
-              <Calendar size={18} className="text-gray-500" />
+            <div className="flex items-center gap-2 px-4 py-3 border-r w-1/3 hover:scale-105 transition-all duration-300">
+              <Calendar size={18} className="text-[#737373]" />
               <input
                 type="text"
                 placeholder="End Date & Time"
@@ -56,8 +56,8 @@ const HeroSection = () => {
               />
             </div>
 
-            <div className="flex items-center gap-2 px-4 py-3 border-r w-1/3">
-              <MapPin size={18} className="text-gray-500" />
+            <div className="flex items-center gap-2 px-4 py-3 border- w-1/3 hover:scale-105 transition-transform duration-300">
+              <MapPin size={18} className="text-[#737373]" />
               <input
                 type="text"
                 placeholder="Location"
@@ -65,7 +65,7 @@ const HeroSection = () => {
               />
             </div>
 
-            <button className="bg-[#EA3C3C] hover:bg-[#cf3333] text-white px-6 font-semibold text-sm">
+            <button className="bg-[#EA3C3C] hover:bg-[#d32f2f] hover:scale-105 transition-all duration-300 text-white px-6 font-semibold text-sm">
               Search
             </button>
           </div>

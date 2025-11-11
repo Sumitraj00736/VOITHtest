@@ -30,7 +30,7 @@ export default function WhyChooseUs() {
     <section className="max-w-7xl mx-auto px-6 md:px-12 py-16 text-center md:text-left">
 
       <div className="mb-12">
-        <h2 className="text-3xl md:text-4xl font-extrabold text-[#737373] mb-3 text-center">
+        <h2 className="text-3xl md:text-4xl font-extrabold text-[#1A202C] mb-3 text-center">
           Why choose us
         </h2>
         <p className="text-[#737373] text-center max-w-2xl mx-auto">
@@ -53,9 +53,9 @@ export default function WhyChooseUs() {
           {features.map((feature) => (
             <div
               key={feature.id}
-              className="flex flex-col md:flex-row items-center md:items-start gap-4"
+              className="flex flex-col md:flex-row items-center md:items-start gap-4  "
             >
-              <div className="flex-shrink-0 bg-[#EA3C3C] w-10 h-10 rounded-lg flex items-center justify-center mx-auto md:mx-0">
+              <div className="flex-shrink-0 bg-[#EA3C3C] w-10 h-10 rounded-lg flex items-center justify-center mx-auto md:mx-0 hover:scale-105 transition-transform duration-300">
                 {feature.icon}
               </div>
               <div className="text-center md:text-left">

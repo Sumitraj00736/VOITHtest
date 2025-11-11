@@ -28,6 +28,7 @@ const Footer = () => {
         }}
       />
 
+
       <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col md:flex-row md:justify-between gap-8 text-gray-300">
           <div className="hidden md:block md:w-1/3">
@@ -150,7 +151,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="mt-8 border-t border-gray-800 pt-6">
+        <div className="mt-8 pt-6">
           <div className="flex flex-col items-center gap-6">
             <div className="flex flex-col items-center md:hidden">
               <h1 className="text-2xl sm:text-3xl font-bold text-[#ea3c3c]">
@@ -191,14 +192,14 @@ const Footer = () => {
             <div className="w-full h-[0.01rem] bg-white text-white"></div>
             <div className="w-full max-w-3xl flex flex-col sm:flex-row items-center justify-between">
               <div className="flex items-center  space-x-12  mb-10 sm:mt-0">
-                <a href="#" className="text-xs text-white hover:text-white">
+                <a href="#" className="text-xs text-white hover:text-white md:text-right">
                   Privacy Policy
                 </a>
                 <a href="#" className="text-xs text-white hover:text-white">
                   Terms &amp; Conditions
                 </a>
               </div>
-              <p className="text-xs text-white font-light text-center mb-10 sm:text-left">
+              <p className="text-sm text-white font-light text-center mb-10 ">
                 ©2024 Vaidya Mobility. All rights reserved.
               </p>
             </div>

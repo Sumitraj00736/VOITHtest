@@ -2,15 +2,15 @@ import React from "react";
 import { X, Menu, Facebook, Instagram, MessageCircle } from "lucide-react";
 import profile from "../../assets/profile.png";
 
-
 const Header = () => {
-  const [open, setOpen] = React.useState(false); 
-  const [mobileOpen, setMobileOpen] = React.useState(false); 
+  const [open, setOpen] = React.useState(false);
+  const [mobileOpen, setMobileOpen] = React.useState(false);
   const dropdownRef = React.useRef(null);
 
   React.useEffect(() => {
     function handleClickOutside(e) {
       if (dropdownRef.current && !dropdownRef.current.contains(e.target)) {
+        console.log("Clicked outside");
         setOpen(false);
       }
     }
@@ -29,27 +29,53 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="sticky top-0 z-50 bg-white p-4 border-b shadow-sm border-[#737373] border-opacity-50">
+    <header className="sticky top-0 z-50 bg-white p-4  shadow-xl ">
       <div className="max-w-7xl mx-auto flex items-center justify-between">
-
         <div className="flex items-center">
-          <h1 className="text-2xl md:text-3xl font-bold ml-10 text-[#1A202C]">LOGO</h1>
+          <a href="/home">
+            {" "}
+            <h1 className="text-2xl md:text-3xl font-bold ml-10 text-[#1A202C]">
+              LOGO
+            </h1>
+          </a>
         </div>
 
-        <nav className="hidden md:flex flex-1 justify-center">
-          <ul className="flex space-x-14">
-            <li className="text-[#1A202C] hover:text-[#737373] cursor-pointer">Home</li>
-            <li className="text-[#1A202C] hover:text-[#737373] cursor-pointer">Renting</li>
-            <li className="text-[#1A202C] hover:text-[#737373] cursor-pointer">How It Works</li>
-            <li className="text-[#1A202C] hover:text-[#737373] cursor-pointer">Contact</li>
+        <nav className="hidden  md:flex flex-1 justify-center">
+          <ul className="flex font-medium space-x-18">
+            <a
+              href="/home"
+              className="text-[#1A202C] hover:text-[#737373] cursor-pointer"
+            >
+              Home
+            </a>
+            <a
+              href="/renting"
+              className="text-[#1A202C] hover:text-[#737373] cursor-pointer"
+            >
+              Renting
+            </a>
+            <a
+              href="/how-it-works"
+              className="text-[#1A202C] hover:text-[#737373] cursor-pointer"
+            >
+              How It Works
+            </a>
+            <a
+              href="/contact"
+              className="text-[#1A202C] hover:text-[#737373] cursor-pointer"
+            >
+              Contact
+            </a>
           </ul>
         </nav>
-        
+
         {/* hamburger menu and user dropdown */}
         <div className="flex items-center space-x-4">
-
           {!mobileOpen && (
-            <div className="hidden md:flex items-center space-x-4 md:mr-10" ref={dropdownRef}>
+            <div
+              className="hidden md:flex items-center space-x-4 md:mr-10"
+              ref={dropdownRef}
+            >
               <button
                 onClick={() => setOpen((v) => !v)}
                 className="flex items-center space-x-2 focus:outline-none"
@@ -59,7 +85,9 @@ const Header = () => {
                   src={profile}
                   alt="User avatar"
                 />
-                <span className="text-[#1A202C]  hidden sm:inline">Rahul Awasti</span>
+                <span className="text-[#1A202C]  hidden sm:inline">
+                  Rahul Awasti
+                </span>
                 <svg
                   className={`w-4 h-4 text-[#1A202C] transition-transform ${
                     open ? "transform rotate-180" : ""
@@ -76,7 +104,7 @@ const Header = () => {
               </button>
 
               {open && (
-                <div className="absolute right-4 top-16 mt-2 w-44 bg-white border rounded shadow-lg py-1 z-20">
+                <div className="absolute right-10 top-16 mt-2 w-44 bg-white border rounded shadow-lg py-1 z-20">
                   <button className="w-full text-left px-4 py-2 text-sm text-[#1A202C] hover:bg-[#737373]">
                     Profile
                   </button>
@@ -117,11 +145,21 @@ const Header = () => {
           </button>
 
           <div className="flex flex-col space-y-8 mt-10 text-lg font-semibold text-gray-900">
-            <a href="/Home" className="hover:text-red-500">Home</a>
-            <a href="/renting" className="hover:text-red-500">Renting</a>
-            <a href="/how-it-works" className="hover:text-red-500">How it works</a>
-            <a href="/contact" className="hover:text-red-500">Contact</a>
-            <a href="/profile" className="hover:text-red-500">Profile</a>
+            <a href="/Home" className="hover:text-red-500">
+              Home
+            </a>
+            <a href="/renting" className="hover:text-red-500">
+              Renting
+            </a>
+            <a href="/how-it-works" className="hover:text-red-500">
+              How it works
+            </a>
+            <a href="/contact" className="hover:text-red-500">
+              Contact
+            </a>
+            <a href="/profile" className="hover:text-red-500">
+              Profile
+            </a>
           </div>
 
           <div className="mb-10">
@@ -132,9 +170,15 @@ const Header = () => {
             </div>
 
             <div className="border-t border-gray-300 pt-4 flex justify-center space-x-22 text-sm text-gray-700">
-              <a href="#" className="hover:text-red-500">FAQs</a>
-              <a href="#" className="hover:text-red-500">Privacy Policy</a>
-              <a href="#" className="hover:text-red-500">Terms & Conditions</a>
+              <a href="#" className="hover:text-red-500">
+                FAQs
+              </a>
+              <a href="#" className="hover:text-red-500">
+                Privacy Policy
+              </a>
+              <a href="#" className="hover:text-red-500">
+                Terms & Conditions
+              </a>
             </div>
           </div>
         </div>

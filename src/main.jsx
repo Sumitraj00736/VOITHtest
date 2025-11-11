@@ -4,6 +4,7 @@ import './index.css'
 import {createBrowserRouter, RouterProvider} from "react-router-dom";
 import Home from './pages/home.jsx'
 import App from './App.jsx'
+import Error from './pages/Error.jsx';
 
 const router = createBrowserRouter([
   {
@@ -13,12 +14,12 @@ const router = createBrowserRouter([
     children: [
       {
         path: "*",
-        element: <div>Not Found</div>,  
+        element: <Error/>,  
       },
       {
         path: "home",
         element: <Home />,
-      }
+      },
     ],
   },
 ]);

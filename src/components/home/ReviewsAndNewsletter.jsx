@@ -56,7 +56,6 @@ export default function ReviewsAndNewsletter() {
 
   return (
     <section className="bg-white">
-      {/* --- REVIEWS SECTION --- */}
       <div className="max-w-7xl mx-auto px-6 md:px-12 py-16 text-center">
         <p className="text-[#EA3C3C] font-semibold uppercase tracking-wider">
           Our Review
@@ -108,9 +107,8 @@ export default function ReviewsAndNewsletter() {
             >
               {reviews.map((review) => (
                 <div key={review.id} className="w-full flex-shrink-0 px-4">
-                  {/* Same Review Card Content as Desktop */}
                   <div className="bg-white rounded-xl shadow-md p-6 text-left hover:shadow-xl transition">
-                    {/* Review Card Content */}
+
                     <div className="flex justify-between items-start mb-4">
                       <Quote className="w-6 h-6 text-[#EA3C3C]" />
                       <div className="flex text-[#EA3C3C]">
@@ -140,7 +138,6 @@ export default function ReviewsAndNewsletter() {
               ))}
             </div>
 
-            {/* Dots - Only on Mobile */}
             <div className="slider-dots mt-8">
               {reviews.map((_, index) => (
                 <button
@@ -154,7 +151,7 @@ export default function ReviewsAndNewsletter() {
           </div>
         )}
 
-        <button className="mt-10 bg-[#EA3C3C] text-white font-semibold px-6 py-2 rounded-lg hover:bg-[#EA3C3C]-700 transition">
+        <button className="mt-10 bg-[#EA3C3C] text-white font-semibold px-6 py-2 rounded-lg hover:scale-105 transition-all">
           See All
         </button>
       </div>
@@ -180,7 +177,7 @@ export default function ReviewsAndNewsletter() {
           </div>
           <button
             type="submit"
-            className="bg-[#EA3C3C] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#EA3C3C]-700 transition w-full md:w-auto"
+            className="bg-[#EA3C3C] text-white font-semibold px-6 py-3 rounded-lg hover:bg-[#EA3C3C]-700 transition w-full md:w-auto hover:scale-105 transition-all"
           >
             Subscribe
           </button>

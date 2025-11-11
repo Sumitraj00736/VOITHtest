@@ -5,8 +5,7 @@ import car2 from "../../assets/car2.png";
 import car3 from "../../assets/car3.png";
 import heavy1 from "../../assets/heavy1.png";
 import heavy2 from "../../assets/heavy2.png";
-import heavy3 from "../../assets/heavy3.png"; 
-
+import heavy3 from "../../assets/heavy3.png";
 
 export default function VehicleCards() {
   const twowheelers = [
@@ -128,26 +127,23 @@ export default function VehicleCards() {
   return (
     <section className="px-6 py-12 max-w-6xl mx-auto">
       <div className="flex flex-col md:flex-row items-center mb-8 md:justify-between">
-  <div className="w-full text-center mx-auto max-w-2xl">
-    <h2 className="text-3xl font-bold text-[#1A202C] mb-2">
-      Types of Vehicles
-    </h2>
-    <p className="text-[#737373]">
-      Be the first person to take the full enjoyment from our service
-    </p>
-  </div>
-</div>
-      <div>
-
+        <div className="w-full text-center mx-auto max-w-2xl">
+          <h2 className="text-3xl font-bold text-[#1A202C] mb-2">
+            Types of Vehicles
+          </h2>
+          <p className="text-[#737373]">
+            Be the first person to take the full enjoyment from our service
+          </p>
+        </div>
       </div>
-{/* Section headers with See All button aligned to end */}
-<div className="flex justify-between items-center mb-6">
-  <h3 className="text-2xl font-bold">2 WHEELERS</h3>
-  <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
-    See all →
-  </button>
-</div>
-      
+
+      {/* 2 wheelers header */}
+      <div className="flex justify-between items-center mb-6">
+        <h3 className="text-2xl font-bold">2 WHEELERS</h3>
+        <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
+          See all →
+        </button>
+      </div>
 
       {/* 2 wheelers grid */}
       <div className="grid md:grid-cols-3 gap-6">
@@ -195,9 +191,11 @@ export default function VehicleCards() {
               <div className="flex justify-between items-center pt-3">
                 <p className="text-lg font-semibold">
                   Rs.{vehicle.price}
-                  <span className="text-[#737373] text-sm font-normal">/hr</span>
+                  <span className="text-[#737373] text-sm font-normal">
+                    /hr
+                  </span>
                 </p>
-                <button className="bg-[#EA3C3C] text-[#ffffff]  text-sm font-semibold px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                <button className="bg-[#EA3C3C] text-[#ffffff]  text-sm font-semibold px-4 py-2 rounded-lg hover:bg-opacity-70 hover:scale-105 transition-all">
                   See More
                 </button>
               </div>
@@ -206,17 +204,16 @@ export default function VehicleCards() {
         ))}
       </div>
 
+      {/* 4 wheelers header */}
+      <div className="flex justify-between items-center mt-10 mb-6">
+        <h3 className="text-2xl font-bold">4 WHEELERS</h3>
+        <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
+          See all →
+        </button>
+      </div>
 
-{/* 4 wheelers header */}
-<div className="flex justify-between items-center mt-10 mb-6">
-  <h3 className="text-2xl font-bold">4 WHEELERS</h3>
-  <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
-    See all →
-  </button>
-</div>
-
-{/* 4 wheelers grid */}
-<div className="grid md:grid-cols-3 gap-6">
+      {/* 4 wheelers grid */}
+      <div className="grid md:grid-cols-3 gap-6">
         {fourwheelers.map((vehicle) => (
           <div
             key={vehicle.id}
@@ -261,9 +258,11 @@ export default function VehicleCards() {
               <div className="flex justify-between items-center pt-3">
                 <p className="text-lg font-semibold">
                   Rs.{vehicle.price}
-                  <span className="text-[#737373] text-sm font-normal">/hr</span>
+                  <span className="text-[#737373] text-sm font-normal">
+                    /hr
+                  </span>
                 </p>
-                <button className="bg-[#EA3C3C] text-white text-sm font-semibold px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                <button className="bg-[#EA3C3C] text-white text-sm font-semibold px-4 py-2 rounded-lg  hover:bg-opacity-70 hover:scale-105 transition-all">
                   See More
                 </button>
               </div>
@@ -272,14 +271,14 @@ export default function VehicleCards() {
         ))}
       </div>
 
-{/* // heavy vehicles */}
-<div className="flex justify-between items-center mt-10 mb-6">
-  <h3 className="text-2xl font-bold">HEAVY DUTY</h3>
-  <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
-    See all →
-  </button>
-</div>
-<div className="grid md:grid-cols-3 gap-6">
+      {/* // heavy vehicles */}
+      <div className="flex justify-between items-center mt-10 mb-6">
+        <h3 className="text-2xl font-bold">HEAVY DUTY</h3>
+        <button className="text-gray-700 font-medium hover:text-[#EA3C3C] transition">
+          See all →
+        </button>
+      </div>
+      <div className="grid md:grid-cols-3 gap-6">
         {heavyVehicles.map((vehicle) => (
           <div
             key={vehicle.id}
@@ -324,16 +323,18 @@ export default function VehicleCards() {
               <div className="flex justify-between items-center pt-3">
                 <p className="text-lg font-semibold">
                   Rs.{vehicle.price}
-                  <span className="text-[#737373] text-sm font-normal">/hr</span>
+                  <span className="text-[#737373] text-sm font-normal">
+                    /hr
+                  </span>
                 </p>
-                <button className="bg-[#EA3C3C] text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-lg hover:bg-red-700 transition">
+                <button className="bg-[#EA3C3C] text-[#ffffff] text-sm font-semibold px-4 py-2 rounded-lg  hover:bg-opacity-70 hover:scale-105 transition-all">
                   See More
                 </button>
               </div>
             </div>
           </div>
         ))}
-      </div>      
+      </div>
     </section>
   );
 }

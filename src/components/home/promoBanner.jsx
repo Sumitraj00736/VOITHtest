@@ -4,6 +4,13 @@ import promobannerImage from "../../assets/promobanner.png";
 const PromoBanner = () => {
   const [showSearch, setShowSearch] = React.useState(false);
 
+
+
+  
+  const handleRentVehicles = () => {
+    console.log("Rent vehicle button clicked");
+  };
+
   return (
     <section className="relative w-full bg-[#1A202C] text-white overflow-hidden my-10">
       <img
@@ -12,7 +19,7 @@ const PromoBanner = () => {
         className="absolute inset-0 w-full h-full object-cover"
       />
 
-      <div className="absolute inset-0 bg-[#1A202C]/50"></div>
+      {/* <div className="absolute inset-0 bg-[#1A202C]/50"></div> */}
 
       {/* Content stays on the right even on small screens */}
       <div className="relative z-10 flex flex-col items-end justify-end px-6 md:px-16 py-12 md:py-20">
@@ -27,7 +34,7 @@ const PromoBanner = () => {
           </p>
 
           <div className="flex justify-end md:justify-start">
-            <button className="bg-[#EA3C3C] hover:bg-[#EA3C3C] text-white px-3 py-2 md:px-6 md:py-3 rounded-md font-semibold transition">
+            <button onClick={handleRentVehicles}   className="bg-[#EA3C3C] hover:scale-105 transition-all duration-300 text-white px-3 py-2 md:px-6 md:py-3 rounded-md font-semibold">
               Rent vehicle
             </button>
           </div>
