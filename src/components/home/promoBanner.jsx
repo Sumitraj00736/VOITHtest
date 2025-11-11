@@ -16,7 +16,7 @@ const PromoBanner = () => {
       <img
         src={promobannerImage}
         alt="Promo"
-        className="absolute inset-0 w-full h-full object-cover"
+        className="absolute inset-0 w-full h-full object-cover-start "
       />
 
       {/* <div className="absolute inset-0 bg-[#1A202C]/50"></div> */}
